@@ -1,6 +1,7 @@
 package euler_project.teste;
 
 import euler_project.problems.ProblemOne;
+import euler_project.problems.ProblemTwo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -27,6 +28,19 @@ public class ProblemsTests {
                 "233168", outputStream
                 .toString()
                 .trim()
+        );
+
+    }
+
+    @Test
+    public void problemTwoTest(){
+
+        new ProblemTwo();
+
+        assertEquals(
+                "4613732", outputStream
+                        .toString()
+                        .trim()
         );
 
     }

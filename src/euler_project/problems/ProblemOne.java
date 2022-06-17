@@ -3,12 +3,14 @@ import static euler_project.Utility.isMultiple;
 
 public class ProblemOne {
 
+    private final int CEILING = 1000;
+
     public ProblemOne(){
-        int MAXNATURALNUMBER = 1000;
+
 
         int result = 0;
 
-        for(int i = 3; i < MAXNATURALNUMBER;i++){
+        for(int i = 3; i < CEILING;i++){
 
             if(isMultiple(3,i) ||
                     isMultiple(5,i)) result += i;
