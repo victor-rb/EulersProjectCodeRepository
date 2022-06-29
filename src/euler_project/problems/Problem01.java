@@ -1,11 +1,11 @@
 package euler_project.problems;
 import static euler_project.Utility.isMultiple;
 
-public class ProblemOne {
+public class Problem01 {
 
     private final int CEILING = 1000;
 
-    public ProblemOne(){
+    public Problem01(){
 
 
         int result = 0;
