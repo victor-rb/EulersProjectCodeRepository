@@ -1,7 +1,9 @@
 package euler_project.teste;
 
-import euler_project.problems.ProblemOne;
-import euler_project.problems.ProblemTwo;
+import euler_project.problems.Problem01;
+import euler_project.problems.Problem03;
+import euler_project.problems.Problem02;
+import euler_project.problems.Problem04;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +24,7 @@ public class ProblemsTests {
     @Test
     public void problemOneTest(){
 
-        new ProblemOne();
+        new Problem01();
 
         assertEquals(
                 "233168", outputStream
@@ -35,15 +37,35 @@ public class ProblemsTests {
     @Test
     public void problemTwoTest(){
 
-        new ProblemTwo();
+        new Problem02();
 
         assertEquals(
-                "4613732", outputStream
+                "4613732",
+                outputStream
                         .toString()
                         .trim()
         );
 
     }
 
+    @Test
+    public void problemThreeTest(){
+        new Problem03();
+
+        assertEquals("6857",
+                outputStream
+                        .toString()
+                        .trim());
+    }
+
+    @Test
+    public void problemFourTest(){
+        new Problem04();
+
+        assertEquals("906609",
+                outputStream
+                        .toString()
+                        .trim());
+    }
 
 }

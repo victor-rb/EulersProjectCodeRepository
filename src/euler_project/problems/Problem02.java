@@ -2,11 +2,11 @@ package euler_project.problems;
 
 import euler_project.Utility;
 
-public class ProblemTwo {
+public class Problem02 {
 
     final private int CEILING = 4000000;
 
-    public ProblemTwo(){
+    public Problem02(){
 
         int result = 0;
         int number1 = 0;

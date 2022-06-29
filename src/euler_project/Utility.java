@@ -14,4 +14,28 @@ public class Utility {
 
     }
 
+    public static boolean isPrime(long number){
+
+        for(long i = 2; (i * i) < number; i += 1){
+
+            if (number % i == 0){
+
+                return false;
+
+            }
+        }
+
+        return true;
+
+    }
+
+    public static boolean isPalindrome(long number){
+
+        String value = String.valueOf(number);
+        String reversedValue = new StringBuilder(value).reverse().toString();
+
+        return value.equals(reversedValue);
+
+    }
+
 }
